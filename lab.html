@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 60px; /* Adjust as needed */
+      background-color: #f0f0f0; /* Background color for the button container */
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    #button1 {
+      background-color: #3498db; /* Blue */
+    }
+
+    #button2 {
+      background-color: #e74c3c; /* Red */
+    }
+
+    #button3 {
+      background-color: #2ecc71; /* Green */
+    }
+
+    #button4 {
+      background-color: #f39c12; /* Orange */
+    }
+
+
+    .button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-container">
+    <button onclick="alert('haha');" class="button" id="button1">Button 1</button>
+    <button onclick="alert('wahaha');" class="button" id="button2">Button 2</button>
+    <button onclick="document.body.style.backgroundColor = 'green';" class="button" id="button3">Green</button>
+    <button onclick="document.body.style.backgroundColor = 'orange';" class="button" id="button4">Orange</button>
+    <button onclick="alert('Reset BG');
+    document.body.style.backgroundColor = 'white';" class="button" id="button5">Reset</button>
+  </div>
+  <script>
+  var a=window.prompt("enter num1");
+  //document.writeln("hello "+name+" current date:"+Date());
+  var b=window.prompt("enter num2");
+  if(a>b){
+    document.body.style.backgroundColor = 'lightblue';
+    document.writeln(a+">"+b);
+
+  }
+  if(a==b){
+    document.body.style.backgroundColor = 'orange';
+    document.writeln(a+"=="+b);
+  }
+  if(a<b){
+    document.body.style.backgroundColor = 'lightyellow';
+    document.writeln(a+"<"+b);
+
+  //alert("hello "+name+" current date: "+Date());
+  }
+
+</script>
+
+
+</body>
+</html>
